@@ -12,4 +12,4 @@ tAndrey.left(140)
 tAndrey.forward(200)
 
 
-turtle.mainloop()
+window.mainloop()
