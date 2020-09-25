@@ -26,8 +26,12 @@ class ContactBook:
                 break
 
     def update(self, name):
-        for contant in self._contacts:
-            if contant.name.lower() == name.lower():
+        for contact in self._contacts:
+            if contact.name.lower() == name.lower():
+                self._print_contact(contact)
+                contact.name = str(input('Escibre el nombre: '))
+                contact.phone = str(input('Escibre el phone: '))
+                contact.email = str(input('Escibre el email: '))
                 break
 
     def search(self, name):
